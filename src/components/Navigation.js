@@ -19,7 +19,7 @@ function Navigation() {
                 
             </div> 
             <div>
-                <NavLink to= "/contact" >
+                <NavLink to= "/about" >
                     <FaUser className='icon-large'/>
                 </NavLink>  
             </div>

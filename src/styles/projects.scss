@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/bootstrap";
+
+.projects {
+    background: linear-gradient(to top, #e4b963cc, #f79696ba), url("../assets/wp5146853-graffiti-4k-mobile-wallpapers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  padding-bottom: 4.5rem;
+}
+
+.title {
+    width: 60%;
+    height:60%;
+}
+
+// .card {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+
+// }
+// .cardsContainer {
+//     display:flex; 
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
