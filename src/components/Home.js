@@ -14,10 +14,15 @@ function Home() {
             <div className="home-top">
                 <img src={Jaden} alt="Jaden Monroe" className='home-name'/>
             </div>
+          
             <div className="home-bottom">
                 <img src={JobTitle} className="home-jobTitle" alt="Front-end Developer"/>
             </div>
-           
+            <div className="download-button">
+                <a href='https://drive.google.com/drive/folders/1DbxvzFAHsNpfxYV8LcbIS4A8g37_aqlh?usp=share_link' download={"resume.pdf"} className="btn btn-primary">
+                    Download resume
+                </a>
+            </div>
         </motion.div>
         
 

@@ -17,19 +17,25 @@
         display: flex;
         height: 50%;
         width: 100%;
+        margin-top: 1rem;
     }
     .home-bottom {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        margin-bottom: 120px;
-        height: 50%;
+        margin-bottom: rem;
+        height: 35%;
         width: 100%;
     }
 
     .home-jobTitle {
-        margin-top: 20px;
+        margin-top: px;
         width: 60%;
-        height:30%;
+        height:40%;
+    }
+    .download-button {
+     margin-left: 13rem;   
+    margin-bottom:5rem;
+        
     }
 }
