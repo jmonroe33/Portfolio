@@ -38,8 +38,8 @@ function Projects() {
     ];
 
     const mappedProjects = projects.map((project) =>(
-        <Card style={{ width: '20rem', padding:"10px", margin: '10px', backgroundColor:"dimgray",color:"white" }}>
-        <Card.Img variant="top" src={project.image} alt={project.title} style={{height: "50%" }}/>
+        <Card style={{ width: '20rem', height:"95%", padding:"10px", margin: '10px', backgroundColor:"dimgray",color:"white" }}>
+        <Card.Img variant="top" src={project.image} alt={project.title} className='card-img'/>
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
           <Card.Text>
@@ -48,8 +48,7 @@ function Projects() {
           <Button variant="warning" href={project.link}>Visit</Button>
         </Card.Body>
       </Card>
-        
-        
+
         ))
     return (
         <motion.div className="projects"
@@ -57,10 +56,10 @@ function Projects() {
             animate={{opacity: 1 }}
             exit={{opacity: 0 }}
         >
-            <div>
+            <div className='img-container'>
                 <img src={projectsTitle} alt="Projects" className="title" />
             </div>
-            <div className='d-flex flex-column justify-content-center align-items-center'>
+            <div className='projects-container'>
                 {mappedProjects}
             </div>
         </motion.div>

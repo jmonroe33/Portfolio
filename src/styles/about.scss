@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../assets/wp5146853-graffiti-4k-mobile-wallpapers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -17,7 +16,6 @@
     }
     .about-me {
         width: 50%;
-       
     }
     .multi-container {
         background: linear-gradient(to top, #785001cd,  #b25733ba), url("../assets/wp5146853-graffiti-4k-mobile-wallpapers.jpg");
@@ -27,10 +25,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // e4b963b7 left
-        // f79696ba right
+        @media only screen and (min-width:915px) {
+            background-image: url("../assets/dark-coder.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            // flex-direction: row;
+            // justify-content: space-evenly;
+
+        }
         .text-container-1 {
-            width: 90%;
+            width: 80%;
             height: 30%;
             color:white;
             margin-top:6rem;
@@ -55,7 +59,7 @@
             }
         }
         .text-container-2 {
-            width: 90%;
+            width: 80%;
             height: 45%;
             color:white;
             margin-top:7rem;
@@ -79,4 +83,12 @@
         }
     }
 
+} 
+
+@media only screen and (min-width:915px) {
+    .about {
+        background:url("../assets/dark-coder.jpg");
+    }
+ 
 }
+

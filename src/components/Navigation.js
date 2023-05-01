@@ -1,28 +1,43 @@
-import React from 'react'
+import { React, useState } from 'react'
 import "../styles/navigation.scss"
-import { FaHome, FaLaptopCode, FaUser } from "react-icons/fa"
+import { FaGithub, FaHome, FaLaptopCode, FaLinkedin, FaUser } from "react-icons/fa"
 import { NavLink } from 'react-router-dom'
-function Navigation() {
 
+
+function Navigation() {
+    
     return (
         <section className="nav" >
+
             <div>
-                <NavLink to= "/" >
-                    <FaHome className="icon-large" />
+                <NavLink to= "/" className='nav-btns'>
+                    {/* <FaHome className="icon-large"/> */}
+                    <p >Home</p>
                 </NavLink>
-               
             </div>
             <div>
-                <NavLink to= "/projects" >
-                    <FaLaptopCode className="icon-large"/>
-                </NavLink>
-                
+                <NavLink to= "/projects" className='nav-btns' >
+                    {/* <FaLaptopCode className="icon-large" /> */}
+                    <p >Projects</p>
+                </NavLink> 
             </div> 
             <div>
-                <NavLink to= "/about" >
-                    <FaUser className='icon-large'/>
+                <NavLink to= "/about" className='nav-btns'>
+                    {/* <FaUser className='icon-large'/> */}
+                    <p  >About</p>
                 </NavLink>  
             </div>
+            <div className="">
+                <NavLink to="https://www.linkedin.com/in/jaden-monroe/">
+                    <FaLinkedin className='icon-large'/>
+                </NavLink> 
+            </div>
+            <div>
+                <NavLink to="https://github.com/jmonroe33">
+                    <FaGithub className='icon-large'/>
+                </NavLink>
+            </div>
+         
         </section>
     )
 }
