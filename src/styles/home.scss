@@ -2,7 +2,15 @@
 .home-name {
     width: 75%;
     height: 35%;
-
+    @media only screen and (min-width:668px) {
+        height: 30%;
+        width:65%;
+    }
+    @media only screen and (min-width:915px) {
+        height: 50%;
+        width:40%;
+        margin-top:2rem;
+    }
 }
 .home {
     background-image: url("../assets/wp5146853-graffiti-4k-mobile-wallpapers.jpg");
@@ -12,12 +20,15 @@
     width: 100%;
     height: 100vh;
     flex-direction: column;
+    @media only screen and (min-width:915px) {
+        background-image:url("../assets/macbook.jpg") ;
+    }
 
     .home-top {
         display: flex;
         height: 50%;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 1rem;  
     }
     .home-bottom {
         display: flex;
@@ -26,16 +37,28 @@
         margin-bottom: rem;
         height: 35%;
         width: 100%;
+        @media only screen and (min-width:915px) {
+            margin-top: 5rem;
+        }
     }
 
     .home-jobTitle {
-        margin-top: px;
         width: 60%;
         height:40%;
+        @media only screen and (min-width:668px) {
+            width: 40%;
+            height: 40%;
+        }
+        @media only screen and (min-width:915px) {
+            margin-top: 30rem;
+            height: 50%;
+            width:30%
+        }
     }
     .download-button {
-     margin-left: 13rem;   
-    margin-bottom:5rem;
-        
+       display: flex;
+       justify-content: end;
+       margin-bottom: 4rem; 
+       margin-right: 3rem;
     }
 }
