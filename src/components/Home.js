@@ -19,8 +19,8 @@ function Home() {
                 <img src={JobTitle} className="home-jobTitle" alt="Front-end Developer"/>
             </div>
             <div className="download-button">
-                <a href='https://drive.google.com/drive/folders/1DbxvzFAHsNpfxYV8LcbIS4A8g37_aqlh?usp=share_link' download={"resume.pdf"} className="btn btn-primary">
-                    Download resume
+                <a href='/Jaden_Monroe_Resume_03-16.pdf' target="_blank" className="btn btn-primary">
+                    Download Resume
                 </a>
             </div>
         </motion.div>

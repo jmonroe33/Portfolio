@@ -9,8 +9,8 @@ function About() {
         <motion.div className='about'>
              {/* <img src={AboutMe} alt="About Me" className='about-me'/> */}
 
-             <div className='multi-container'>
-                <section className='text-container-1'>
+             <div className='about-skills'>
+                <div className='text-container-1'>
                     <div>
                         <h3 className='about-h3'>About</h3>
                         <p>
@@ -33,24 +33,33 @@ function About() {
             
                         </p>
                     </div>
-                </section>  
+                </div>  
 
-                <section className='text-container-2'>
+                <div className='text-container-2'>
                     <h3>Skills</h3>
-                  
+                        <ul>
+                            <p>Frontend:</p> 
+                            <li>
+                                HTML, CSS, Javascript, React, Bootstrap, Tailwind CSS, SCSS 
+                            </li>
+                            <p>Backend:</p> 
+                            <li>
+                                Node.js, Express.js, Knex, PostgreSQL 
+                            </li>
+                        </ul>
                         <p>
                            Customer oriented, Time management, Task management, 
                         </p>
                         <p>
-                            Frontend: HTML, CSS, Javascript, React, Bootstrap, Tailwind CSS, SCSS 
+                            Frontend: 
                         </p>  
                         <p>
-                            Backend: Node.js, Express.js, Knex, PostgreSQL     
+                            Backend:     
                         </p>   
                        <p>
                         Testing: Mocha, Chai, Jest
                        </p>
-                </section>
+                </div>
              </div>
            
         </motion.div>
