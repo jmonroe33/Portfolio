@@ -1,95 +1,90 @@
 .about {
     background: linear-gradient(to top, #785001cd,  #b25733ba), url("../assets/wp5146853-graffiti-4k-mobile-wallpapers.jpg");
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-
+    overflow-y: scroll;
+    margin-bottom: 60px;
+    
+     -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .about-container {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .profile-photo {
         width: 100px;
         height: 100px;
         border-radius:50%;
     }
-    .about-me {
-        width: 50%;
-    }
+
     .about-skills { 
         width: 100%;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    
         @media only screen and (min-width:915px) {
             background-image: url("../assets/dark-coder.jpg");
             background-size: 100%;
             background-repeat: no-repeat;
+            
             // flex-direction: row;
             // justify-content: space-evenly;
 
         }
+       
         .text-container-1 {
             width: 80%;
             height: 30%;
             color:white;
-            margin-top:6rem;
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
             margin-bottom: 2rem;
-            
-            h3 {
+            .about-h3 {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 900;
                 text-align: center;
             }
-         
-            .skills {
-                display: flex;
-                flex-direction: column;
-                padding: 9px;
-                
                 p {
                     font-family: 'Roboto', sans-serif;
                     font-weight: 400;
                     width: 80%;
-                    margin-left: 2rem;
+     
                 }
-            }
         }
-        .text-container-2 {
-            width: 80%;
-            height: 45%;
-            color:white;
-            margin-top:2rem;
-            h3 {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 900;
-                text-align: start;
-            }
-            .skills-2 {
-                display: flex;
-                flex-direction: column;
-                padding: 9px;
-                margin-bottom: 6rem;
-                p {
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: 400;
-                    width: 80%;
-                    margin-left: 2rem;
-                }
-            }
-        }
+  
     }
+    h3 {
+        text-align: center;
+        color: white;
+        font-family: 'Roboto',sans-serif;
+    }
+     .skills {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: space-around;
+        ul {
+
+        }
+     }
 
 } 
 
 @media only screen and (min-width:915px) {
     .about {
         background:url("../assets/dark-coder.jpg");
+        overflow-y: hidden;
+        margin-bottom: 0;
     }
  
 }
-
+ 
