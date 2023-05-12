@@ -6,11 +6,11 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding-bottom: 4.5rem;
-@media only screen and (min-width:768px) {
-  bagckground-size:cover;
+  // padding-bottom: 4.5rem
+ 
+ @media only screen and (min-width:386) {
   height: 100vh;
-}
+ }
   
   @media only screen and (min-width:915px)  {
     background-image: url("../assets/macbook.jpg");
@@ -38,7 +38,6 @@
 
   .card-img {
     width: 100%;
-  
   }
 .card:nth-child(4){
   img {
