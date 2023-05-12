@@ -1,6 +1,6 @@
-import { React, useState } from 'react'
+import { React, } from 'react'
 import "../styles/navigation.scss"
-import { FaGithub, FaHome, FaLaptopCode, FaLinkedin, FaUser } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { NavLink } from 'react-router-dom'
 // try changing the paragraph font that is in the about page to the home projects and about links in the nav. 
 // also come up with some more info in the about and then your finito my boiiii.
