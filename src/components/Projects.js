@@ -41,8 +41,8 @@ function Projects() {
         },  
     ];
 
-    const mappedProjects = projects.map((project) =>(
-        <Card style={{ width: '20rem', height:"95%", padding:"10px", margin: '10px', backgroundColor:"dimgray",color:"white" }}>
+    const mappedProjects = projects.map((project, i) =>(
+        <Card  key={i} style={{ width: '20rem', height:"95%", padding:"10px", margin: '10px', backgroundColor:"dimgray",color:"white" }}>
         <Card.Img variant="top" src={project.image} alt={project.title} className='card-img'/>
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
