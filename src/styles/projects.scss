@@ -4,7 +4,9 @@
   background: linear-gradient(to top, #785001cd,  #b25733ba), url("../assets/wp5146853-graffiti-4k-mobile-wallpapers.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
+  @media only screen and (min-width:768px) {
+   height:900px;
+  }
   @media only screen and (min-width:915px)  {
     background-image: url("../assets/macbook.jpg");
     background-size: cover;
@@ -23,8 +25,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    padding: 1rem;
+    
     @media only screen and (min-width:768px)  {
-      
       flex-direction: row;
       flex-wrap: nowrap; 
       margin-top: 2.7rem;   
@@ -32,13 +35,9 @@
   }
 
   .card-img {
-    width: 100%;
+   height: 140px;
   }
-.card:nth-child(4){
-  img {
-    height: 46%;
-  }
-}
+
   .title {
     width: 60%;
     height:60%;
